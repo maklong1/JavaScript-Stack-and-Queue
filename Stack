@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<body>
+<script type="text/javascript">
+
+		class Stack {
+			constructor() 
+			{
+			this.storage  = {}
+			this.size = 0
+			}		
+			
+			push(element) 
+			{
+			this.size++
+			this.storage[this.size] = element
+			console.log(this.storage)
+			}
+			
+			pop()
+			{
+			let removed = this.storage[this.size]
+			delete this.storage[this.size]
+			this.size--
+			return removed
+			console.log(this.storage)
+			}
+			
+			peek() 
+			{
+			return this.storage[this.size]
+			console.log(this.storage)
+			}
+		}
+			const stack = new Stack()
+			stack.push('Valorant')
+			stack.push('Genshin Impact')
+			stack.push('Axie')
+			console.log(this.storage)		
+	
+</script>
+</body>
+</html>
